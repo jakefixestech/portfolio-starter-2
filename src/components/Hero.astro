@@ -1,23 +1,53 @@
 ---
+
 ---
 
 <section 
-  class="relative text-white"
-  style="background-image: url('/sugarhouse.jpg'); background-size: cover; background-position: center; background-color: rgb(120, 53, 15);"
+  class="relative min-h-[600px] lg:min-h-[700px] flex items-center justify-center overflow-hidden"
+  aria-labelledby="hero-heading"
 >
-  <div class="absolute inset-0 bg-amber-900/60"></div>
-  <div class="relative max-w-5xl mx-auto px-4 py-24 md:py-36 text-center">
-    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-      White Mountain Maple Co.
-    </h1>
-    <p class="text-xl md:text-2xl mb-8 italic">
-      Small Batch. Pure NH Maple.
-    </p>
-    <a 
-      href="/products" 
-      class="inline-block bg-cream text-amber-700 px-8 py-3 text-lg font-semibold hover:bg-amber-50 focus:outline-none focus:ring-2 focus:ring-cream focus:ring-offset-2 focus:ring-offset-amber-900"
+  <!-- Background Image -->
+  <div class="absolute inset-0">
+    <img 
+      src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+      alt="Scenic view of New Hampshire mountains with rolling hills and forests under a clear sky"
+      class="w-full h-full object-cover"
+      loading="eager"
+    />
+    <div class="absolute inset-0 bg-navy/60"></div>
+  </div>
+
+  <!-- Content -->
+  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-16">
+    <h1 
+      id="hero-heading"
+      class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-heading font-bold text-white leading-tight text-balance"
     >
-      Shop Our Maple
-    </a>
+      Your Home in the North Country Starts Here.
+    </h1>
+    <p class="mt-6 text-lg sm:text-xl lg:text-2xl text-gray-200 max-w-3xl mx-auto text-pretty">
+      Serving Lancaster, NH and the surrounding North Country region.
+    </p>
+    <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+      <a 
+        href="/listings"
+        class="inline-flex items-center justify-center w-full sm:w-auto px-8 py-4 bg-gold hover:bg-gold-dark text-navy font-semibold text-lg rounded-md transition-colors focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-navy"
+      >
+        Browse Listings
+      </a>
+      <a 
+        href="/about#team"
+        class="inline-flex items-center justify-center w-full sm:w-auto px-8 py-4 border-2 border-white text-white hover:bg-white hover:text-navy font-semibold text-lg rounded-md transition-colors focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-navy"
+      >
+        Meet Our Team
+      </a>
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce" aria-hidden="true">
+    <svg class="w-6 h-6 text-white/80" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+    </svg>
   </div>
 </section>

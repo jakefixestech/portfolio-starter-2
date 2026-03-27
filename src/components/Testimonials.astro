@@ -1,0 +1,62 @@
+---
+const testimonials = [
+  {
+    quote: "North Country Realty Group made our dream of owning a home in the White Mountains a reality. Their knowledge of the local market was invaluable, and they were with us every step of the way.",
+    author: "Sarah & Michael Thompson",
+    location: "Lancaster, NH",
+  },
+  {
+    quote: "Professional, responsive, and truly dedicated to their clients. They found us the perfect property within our budget and timeline. I couldn't recommend them more highly.",
+    author: "David Chen",
+    location: "Whitefield, NH",
+  },
+  {
+    quote: "Selling our family home of 30 years was emotional, but the team handled everything with care and professionalism. They got us above asking price in just two weeks!",
+    author: "Margaret O'Brien",
+    location: "Jefferson, NH",
+  },
+];
+---
+
+<section 
+  class="py-16 lg:py-24 bg-gray-50"
+  aria-labelledby="testimonials-heading"
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h2 
+        id="testimonials-heading"
+        class="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-navy"
+      >
+        What Our Clients Say
+      </h2>
+      <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+        Don't just take our word for it—hear from the families we've helped.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {testimonials.map((testimonial) => (
+        <blockquote class="bg-white p-8 rounded-lg shadow-md">
+          <svg class="w-10 h-10 text-gold mb-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+          </svg>
+          <p class="text-gray-700 text-lg leading-relaxed text-pretty">
+            {testimonial.quote}
+          </p>
+          <footer class="mt-6 flex items-center gap-4">
+            <div class="w-12 h-12 rounded-full bg-navy flex items-center justify-center text-white font-semibold text-lg" aria-hidden="true">
+              {testimonial.author.split(' ').map(n => n[0]).slice(0, 2).join('')}
+            </div>
+            <div>
+              <cite class="not-italic font-semibold text-navy">
+                {testimonial.author}
+              </cite>
+              <p class="text-sm text-gray-600">{testimonial.location}</p>
+            </div>
+          </footer>
+        </blockquote>
+      ))}
+    </div>
+  </div>
+</section>

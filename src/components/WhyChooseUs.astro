@@ -1,0 +1,78 @@
+---
+const features = [
+  {
+    title: "Local Expertise",
+    description: "Over 25 years of experience in the North Country real estate market. We know every neighborhood, school district, and hidden gem.",
+    icon: "map",
+  },
+  {
+    title: "Personalized Service",
+    description: "Your goals are our priority. We take the time to understand your unique needs and guide you every step of the way.",
+    icon: "heart",
+  },
+  {
+    title: "Deep Community Roots",
+    description: "We don't just work here—we live here. Our deep ties to the community mean we're invested in your success.",
+    icon: "users",
+  },
+  {
+    title: "Proven Results",
+    description: "Hundreds of satisfied clients and successful transactions. Our track record speaks for itself.",
+    icon: "award",
+  },
+];
+---
+
+<section 
+  class="py-16 lg:py-24 bg-white"
+  aria-labelledby="why-choose-us-heading"
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h2 
+        id="why-choose-us-heading"
+        class="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-navy"
+      >
+        Why Choose Us
+      </h2>
+      <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+        What sets North Country Realty Group apart from the rest.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      {features.map((feature) => (
+        <div class="text-center p-6 rounded-lg hover:bg-gray-50 transition-colors">
+          <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gold/10 text-gold mb-6">
+            {feature.icon === "map" && (
+              <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+              </svg>
+            )}
+            {feature.icon === "heart" && (
+              <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+            )}
+            {feature.icon === "users" && (
+              <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+              </svg>
+            )}
+            {feature.icon === "award" && (
+              <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+              </svg>
+            )}
+          </div>
+          <h3 class="text-xl font-heading font-semibold text-navy mb-3">
+            {feature.title}
+          </h3>
+          <p class="text-gray-600 text-pretty">
+            {feature.description}
+          </p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
