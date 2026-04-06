@@ -3,7 +3,7 @@ const products = [
   {
     name: "Grade A Golden Delicate",
     description: "Our lightest syrup with a subtle, delicate flavor. Perfect for drizzling over vanilla ice cream or adding a gentle sweetness to tea. Harvested early in the season when the sap runs clearest.",
-    image: "/maple-golden.jpg",
+    image: "/maple-golden.webp",
     alt: "Bottle of light golden maple syrup on a rustic wooden surface with wildflowers",
     bg: "bg-cream",
     reverse: false
@@ -11,7 +11,7 @@ const products = [
   {
     name: "Grade A Amber Rich",
     description: "A well-balanced maple flavor that's our most popular choice. Ideal for pancakes, waffles, and everyday use. The classic New Hampshire maple experience in every pour.",
-    image: "/maple-amber.jpg",
+    image: "/maple-amber.webp",
     alt: "Amber maple syrup pouring over a stack of pancakes in a cozy farmhouse kitchen",
     bg: "bg-amber-50",
     reverse: true
@@ -19,7 +19,7 @@ const products = [
   {
     name: "Grade A Dark Robust",
     description: "Bold, full-bodied maple taste with hints of caramel. Excellent for baking and cooking, or for those who love a stronger flavor. Harvested late in the season for maximum depth.",
-    image: "/maple-dark.jpg",
+    image: "/maple-dark.webp",
     alt: "Dark robust maple syrup bottle surrounded by cinnamon sticks and autumn maple leaves",
     bg: "bg-cream",
     reverse: false
@@ -27,7 +27,7 @@ const products = [
   {
     name: "Maple Cream",
     description: "Pure maple syrup whipped into a smooth, spreadable cream. A decadent treat on toast, muffins, or eaten straight from the jar. Once you try it you'll never go back.",
-    image: "/maple-cream.jpg",
+    image: "/maple-cream.webp",
     alt: "Jar of maple cream spread on fresh bread on a wooden cutting board",
     bg: "bg-amber-50",
     reverse: true
@@ -35,7 +35,7 @@ const products = [
   {
     name: "Maple Sugar",
     description: "Crystallized pure maple, perfect for baking or as a natural sweetener. A wonderful substitute for refined sugar with a rich depth of flavor that plain sugar can never match.",
-    image: "/maple-sugar.jpg",
+    image: "/maple-sugar.webp",
     alt: "Wooden bowl filled with golden maple sugar crystals in warm light",
     bg: "bg-cream",
     reverse: false
@@ -43,7 +43,7 @@ const products = [
   {
     name: "Gift Boxes",
     description: "Curated collections of our finest products, beautifully packaged in rustic wooden crates with kraft paper and twine. The perfect way to share a true taste of New Hampshire with someone you love.",
-    image: "/maple-gift.jpg",
+    image: "/maple-gift.webp",
     alt: "Rustic wooden gift crate filled with maple syrup bottles and maple products",
     bg: "bg-amber-50",
     reverse: true
@@ -63,6 +63,8 @@ const products = [
               src={product.image}
               alt={product.alt}
               class="rounded-xl shadow-lg w-full object-cover"
+              width="600"
+              height="520"
               style="max-height: 520px;"
               loading="lazy"
               decoding="async"
