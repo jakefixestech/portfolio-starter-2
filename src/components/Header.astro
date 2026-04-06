@@ -2,14 +2,22 @@
 ---
 
 <header class="bg-cream border-b border-amber-700/20">
-  <div class="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
-    <a href="/" aria-label="White Mountain Maple Co. - Home" class="text-xl md:text-2xl font-bold text-amber-700">
-      White Mountain Maple Co.
+  <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
+    <a href="/" aria-label="White Mountain Maple Co. - Home" class="flex items-center gap-3">
+      <img
+        src="/logo.png"
+        alt="White Mountain Maple Co."
+        class="w-14 h-14 object-contain hover:opacity-80 transition-opacity"
+        loading="eager"
+        decoding="async"
+      />
+      <span class="text-xl md:text-2xl font-bold text-amber-700 hover:text-amber-800 transition-colors">
+        White Mountain Maple Co.
+      </span>
     </a>
     <nav aria-label="Main navigation" class="flex gap-4 md:gap-6">
-      <a href="/" aria-label="Home" class="text-amber-700 hover:text-amber-800 text-sm md:text-base">Home</a>
-      <a href="/products" class="text-amber-700 hover:text-amber-800 text-sm md:text-base">Products</a>
-      <a href="/contact" class="text-amber-700 hover:text-amber-800 text-sm md:text-base">Contact</a>
+      <a href="/products" class="text-amber-700 hover:text-amber-800 text-sm md:text-base font-medium">Products</a>
+      <a href="/contact" class="text-amber-700 hover:text-amber-800 text-sm md:text-base font-medium">Contact</a>
     </nav>
   </div>
 </header>
